@@ -21,20 +21,12 @@ Os números ímpares são [1, 3, 5]
 
 # Código para pegar a lista
 # Pede ao usuário uma lista de números separados por vírgula
-entrada = input("Digite a sua lista (separando os números por vírgula): ")
+# Código para pegar a lista
+lista = [*map(int, input("Digite a sua lista (separando os números por vírgula): ").split(","))]
 
-# Converte a string em uma lista de inteiros
-lista = list(map(int, entrada.split(",")))
+impar = []  # Lista de números impares
+for i in lista: # Verificar caracter por caracter da lista
+    if i % 2 != 0: # Verificar se o número é impar de fato
+        impar.append(i) # Adicionar todos os números impares a lista
 
-# Cria uma lista vazia para guardar os números ímpares
-impar = []
-
-# Percorre cada número na lista
-for i in lista: 
-    # Verifica se o número é ímpar
-    if i % 2 != 0:
-        # Adiciona o número ímpar à lista
-        impar.append(i)
-
-# Mostra os números ímpares encontrados
-print(impar)
+print(impar) # Printar os números impares
