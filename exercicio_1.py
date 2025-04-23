@@ -25,3 +25,13 @@ Pode-se utilizar o comando "while" ou até o "for" para te ajudar nisso.
 
 Fonte: Curso em vídeo.
 """
+numero = int(input("Digite um número:"))
+
+resultado = 1
+contador = 1 
+
+while contador <= numero:
+    resultado *= contador 
+    contador += 1
+
+print(resultado)
