@@ -30,7 +30,21 @@ Ambas
 """
 
 # Código para pegar as listas de input
-primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))]
+# Código para pegar as listas de input
+# Entrada das duas listas
+primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))] 
 segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
+
+# Encontrar o maior valor de cada lista
+maior_primeira_lista = max(primeira_lista)
+maior_segunda_lista = max(segunda_lista)
+
+# Comparar e imprimir o resultado
+if maior_primeira_lista > maior_segunda_lista:
+    print("Primeira Lista")
+elif maior_primeira_lista < maior_segunda_lista:
+    print("Segunda Lista")
+else:
+    print("Ambas")
 
 # Fazer a partir daqui
